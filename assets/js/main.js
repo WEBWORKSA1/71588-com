@@ -36,8 +36,9 @@
   if (burger && menu) burger.addEventListener("click", function () {
     var o = menu.classList.toggle("open"); burger.setAttribute("aria-expanded", o ? "true" : "false");
   });
+  var BASE = window.SITE_BASE || "";
   var path = location.pathname.split("/").pop() || "index.html";
-  $$(".menu a").forEach(function (a) { if (a.getAttribute("href") === path) a.setAttribute("aria-current", "page"); });
+  $$(".menu a").forEach(function (a) { var h = (a.getAttribute("href") || "").split("/").pop(); if (h === path) a.setAttribute("aria-current", "page"); });
 
   /* ---------- Mail links (address built on click only) ---------- */
   $$("[data-mail]").forEach(function (a) {
@@ -138,7 +139,7 @@
     ];
     slots.forEach(function (slot, k) {
       var h = house[k % house.length];
-      slot.innerHTML = '<div><span class="ad-label">Advertisement</span><strong>' + h[0] + '</strong><br><a class="btn btn-sm btn-ghost" style="margin-top:8px" href="' + h[1] + '">' + h[2] + " →</a></div>";
+      slot.innerHTML = '<div><span class="ad-label">Advertisement</span><strong>' + h[0] + '</strong><br><a class="btn btn-sm btn-ghost" style="margin-top:8px" href="' + BASE + h[1] + '">' + h[2] + " →</a></div>";
     });
   }
 
@@ -174,7 +175,7 @@
         (amount ? "&amount=" + amount : "") + "&item_name=" + encodeURIComponent(note || "Support 71588.com operations");
       window.open(u, "_blank", "noopener"); return;
     }
-    location.href = "support.html#pledge";
+    location.href = BASE + "support.html#pledge";
   };
   $$("[data-donate]").forEach(function (b) { b.addEventListener("click", function (e) { e.preventDefault(); window.SITE_DONATE(b.getAttribute("data-donate"), b.getAttribute("data-note")); }); });
   $$("[data-link]").forEach(function (a) { var u = C[a.getAttribute("data-link")]; if (u) { a.href = u; a.classList.remove("hidden"); } });
