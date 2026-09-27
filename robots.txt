@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /tools/
+
+Sitemap: https://71588.com/sitemap.xml
