@@ -1,0 +1,38 @@
+<!--
+title: Lucky Number Generator & Lucky Price Finder | 71588.com
+description: Generate auspicious Chinese lucky numbers for phones, PINs, plates and brands, and find the luckiest retail price near your target — 4-free, 8-rich endings.
+priority: 0.85
+-->
+<div class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> › Tools › Generator</div>
+  <h1>Number & Price Generator</h1>
+  <p>Create meaningful numbers for anything — and price like the brands that sell best to Chinese-speaking customers.</p>
+</div></div>
+<section style="padding-top:32px">
+  <div class="container grid g2" style="align-items:start">
+    <div class="form-card">
+      <h2 style="font-size:1.5rem">✨ Lucky Number Generator</h2>
+      <form class="form" id="generator-form">
+        <div class="row">
+          <div><label for="gen-length">Length</label><input id="gen-length" type="number" min="2" max="12" value="6"></div>
+          <div><label for="gen-style">Theme</label><select id="gen-style"><option value="prosperity">💰 Prosperity (8)</option><option value="smooth">🌊 Smooth sailing (6)</option><option value="longevity">⏳ Longevity (9)</option><option value="love">❤️ Love (520/1314)</option><option value="balanced">⚖️ Balanced</option></select></div>
+        </div>
+        <div><label for="gen-include">Must include (optional)</label><input id="gen-include" inputmode="numeric" placeholder="e.g. your birth year 1988"></div>
+        <label class="check"><input type="checkbox" id="gen-end8" checked> End with 8</label>
+        <button class="btn btn-primary" type="submit">Generate 12 numbers</button>
+      </form>
+      <div id="generator-result" class="grid g2" style="margin-top:18px"></div>
+    </div>
+    <div class="form-card" id="price">
+      <h2 style="font-size:1.5rem">💲 Lucky Price Finder</h2>
+      <p class="muted small">Enter your intended price. We suggest nearby prices that end in auspicious patterns (8, 88, 68, 168…) and avoid 4 and 250.</p>
+      <form class="form" id="price-form">
+        <div><label for="price-base">Target price</label><input id="price-base" type="number" min="0.5" step="0.01" placeholder="e.g. 1250" required></div>
+        <button class="btn btn-gold" type="submit">Find lucky prices</button>
+      </form>
+      <div id="price-result" class="grid g2" style="margin-top:18px"></div>
+      <div class="callout" style="margin-top:18px"><b>Selling to Chinese customers?</b> Our <a href="business.html">Prosperity for Business</a> service audits your pricing, packaging numbers and launch dates. <a href="blueprint.html?goal=Pricing">Get a free audit →</a></div>
+    </div>
+  </div>
+  <div class="container"><div class="ad-slot" data-ad="banner"></div></div>
+</section>

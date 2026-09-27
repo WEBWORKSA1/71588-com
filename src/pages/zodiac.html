@@ -1,0 +1,30 @@
+<!--
+title: Chinese Zodiac Calculator, Lucky Numbers & Compatibility | 71588.com
+description: Find your exact Chinese zodiac animal and element using the real lunar calendar, see traditional lucky numbers for all 12 signs, and check zodiac compatibility.
+priority: 0.85
+-->
+<div class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> › Tools › Zodiac</div>
+  <h1>Chinese Zodiac & Lunar Date <span class="zh muted" style="font-size:.6em">生肖</span></h1>
+  <p>Current year: <b id="current-year">—</b>. Your sign changes at Lunar New Year, not January 1 — we use the real Chinese calendar.</p>
+</div></div>
+<section style="padding-top:32px">
+  <div class="container grid g2" style="align-items:start">
+    <div class="form-card">
+      <h2 style="font-size:1.4rem">🐉 Find your sign</h2>
+      <form class="form" id="zodiac-form"><div><label for="zodiac-date">Date of birth</label><input id="zodiac-date" type="date" required></div><button class="btn btn-primary" type="submit">Reveal my zodiac</button></form>
+      <div id="zodiac-result" style="margin-top:18px" aria-live="polite"></div>
+    </div>
+    <div class="form-card">
+      <h2 style="font-size:1.4rem">💞 Compatibility</h2>
+      <form class="form" id="compat-form"><div class="row"><div><label for="compat-a">Sign A</label><select id="compat-a"></select></div><div><label for="compat-b">Sign B</label><select id="compat-b"></select></div></div><button class="btn btn-gold" type="submit">Check match</button></form>
+      <div id="compat-result" style="margin-top:18px" aria-live="polite"></div>
+    </div>
+  </div>
+  <div class="container" style="margin-top:32px">
+    <h2>The 12 signs, years & lucky numbers</h2>
+    <div class="table-wrap"><table><thead><tr><th>Sign</th><th>Years (1936–2031)*</th><th>Lucky numbers</th><th>Traits</th></tr></thead><tbody id="zodiac-table"></tbody></table></div>
+    <p class="small muted">*Born in January or early February? Your sign may be the previous year's — use the calculator above. Lucky numbers follow commonly published traditions; sources vary.</p>
+    <div class="ad-slot" data-ad="inArticle"></div>
+  </div>
+</section>

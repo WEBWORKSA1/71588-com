@@ -1,0 +1,73 @@
+<!--
+title: Lucky Number Analyzer — Chinese Meaning of Any Phone, Plate or Price | 71588.com
+description: Free Chinese lucky number analyzer. Enter any phone number, license plate, address, price or domain to get a 1–100 prosperity score, digit meanings and hidden combinations like 168, 518 and 520.
+priority: 0.95
+-->
+<div class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> › Tools › Analyzer</div>
+  <h1>Lucky Number Analyzer</h1>
+  <p>Score any number with Chinese homophone wisdom — digit by digit, with the combinations buyers actually pay for.</p>
+</div></div>
+<section style="padding-top:36px">
+  <div class="container">
+    <div class="form-card">
+      <div class="chips" style="margin-bottom:14px" role="group" aria-label="Number type">
+        <button class="chip active" data-mode="any" data-ph="Any number, e.g. 71588">Any number</button>
+        <button class="chip" data-mode="phone" data-ph="Phone number, e.g. +1 514 888 1688">📱 Phone</button>
+        <button class="chip" data-mode="plate" data-ph="License plate, e.g. 8A 888">🚗 Plate</button>
+        <button class="chip" data-mode="address" data-ph="Street/unit number, e.g. 1688">🏠 Address</button>
+        <button class="chip" data-mode="price" data-ph="Price, e.g. 168.88">💲 Price</button>
+        <button class="chip" data-mode="domain" data-ph="Numeric domain, e.g. 71588.com">🌐 Domain</button>
+      </div>
+      <form id="analyzer-form" class="hero-search" style="max-width:none;margin:0;box-shadow:none" role="search">
+        <input id="analyzer-input" inputmode="numeric" placeholder="Any number, e.g. 71588" aria-label="Number to analyze" required>
+        <select id="analyzer-mode" class="hidden" aria-hidden="true"><option value="any">any</option><option value="phone">phone</option><option value="plate">plate</option><option value="address">address</option><option value="price">price</option><option value="domain">domain</option></select>
+        <button class="btn btn-primary" type="submit">Analyze</button>
+      </form>
+      <p class="form-note" style="margin-top:8px">Letters and symbols are ignored. Nothing you type is stored on our servers.</p>
+    </div>
+
+    <div id="analyzer-result" style="margin-top:28px" aria-live="polite"></div>
+
+    <div class="after-analysis hidden" style="margin-top:28px">
+      <div class="grid g2">
+        <div class="form-card">
+          <span class="tag red">Free full report</span>
+          <h3 style="margin-top:10px">Get the full Prosperity Report for this number</h3>
+          <p class="muted small">Mandarin & Cantonese readings, zodiac fit, better alternatives, resale value signals and best dates to start using it.</p>
+          <form class="form" data-form="Number report request" data-success="Report requested! We'll email your full Prosperity Report.">
+            <input type="hidden" id="report-number" name="number">
+            <div class="row"><input name="name" placeholder="First name" required aria-label="First name"><input type="email" name="email" placeholder="Email" required aria-label="Email"></div>
+            <select name="purpose" aria-label="Purpose"><option>Personal phone number</option><option>Business phone / hotline</option><option>License plate</option><option>Property / address</option><option>Pricing</option><option>Domain / brand</option></select>
+            <button class="btn btn-primary" type="submit">Email my report</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>What next?</h3>
+          <ul class="clean combo-list">
+            <li>💎 <a href="marketplace.html#sell">Get a free valuation</a> if you own a lucky number</li>
+            <li>🔍 <a href="marketplace.html#buy">Request a better number</a> — we'll search for you</li>
+            <li>✨ <a href="generator.html">Generate lucky alternatives</a></li>
+            <li>📅 <a href="dates.html">Pick the best date</a> to start using it</li>
+          </ul>
+          <button class="btn btn-ghost btn-sm" data-share="My lucky number score on 71588.com">Share this result</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="ad-slot" data-ad="banner"></div>
+
+    <div class="prose" style="margin-top:30px">
+      <h2>How the score works</h2>
+      <p>Each digit carries a traditional association drawn from how it sounds in Mandarin and Cantonese — 8 (发, prosper), 6 (顺, smooth), 9 (久, lasting) score high; 4 (死, death) scores low. We then look for well-known combinations (168, 518, 520, 1314, 250, 14…), give extra weight to the final digit, and reward patterns such as repeats, rising sequences and palindromes.</p>
+      <div class="callout"><b>Honest note:</b> this is a cultural-meaning tool, not fortune-telling. Use it for naming, pricing, gifting and marketing insight — and for fun.</div>
+      <h2>Tips by number type</h2>
+      <ul>
+        <li><b>Phone numbers:</b> the last four digits carry most of the value. Endings like 8888, 1688, 6688 and 5188 are prized.</li>
+        <li><b>License plates:</b> shorter plates and repeated 8/6/9 dominate auction records.</li>
+        <li><b>Addresses & floors:</b> avoid 4, 14, 24 and 44 if you plan to resell to Chinese-speaking buyers.</li>
+        <li><b>Prices:</b> end in 8, 88, 68 or 168; avoid 4 and 250. Use the <a href="generator.html#price">Lucky Price Finder</a>.</li>
+      </ul>
+    </div>
+  </div>
+</section>
