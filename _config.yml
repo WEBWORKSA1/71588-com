@@ -1,0 +1,14 @@
+# Jekyll config — GitHub Pages builds this site natively (free plan, no Actions needed).
+title: "71588.com"
+description: "Chinese lucky numbers, meanings and prosperity tools"
+# Project-site path. When the custom domain 71588.com is connected, change baseurl to ""
+baseurl: "/71588-com"
+url: "https://webworksa1.github.io"
+canonical: "https://71588.com"
+exclude:
+  - src
+  - tools
+  - README.md
+  - shots
+  - Gemfile
+  - Gemfile.lock

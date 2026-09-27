@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title | escape }}</title>
+<meta name="description" content="{{ page.description | escape }}">
+<link rel="canonical" href="{{ site.canonical }}{{ page.url | replace: '/index.html', '/' }}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#c8102e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="71588.com">
+<meta property="og:title" content="{{ page.title | escape }}">
+<meta property="og:description" content="{{ page.description | escape }}">
+<meta property="og:url" content="{{ site.canonical }}{{ page.url | replace: '/index.html', '/' }}">
+<meta property="og:image" content="https://71588.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ site.baseurl }}/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="{{ site.baseurl }}/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Serif+SC:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"71588.com","alternateName":"71588 Prosperity Numbers","url":"https://71588.com/","potentialAction":{"@type":"SearchAction","target":"https://71588.com/analyzer.html?n={{ '{' }}search_term_string{{ '}' }}","query-input":"required name=search_term_string"}}</script>
+{% if page.article %}<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ page.title | jsonify }},"description":{{ page.description | jsonify }},"datePublished":"{{ page.date_published }}","dateModified":"{{ page.date_published }}","author":{"@type":"Organization","name":"71588.com Editorial"},"publisher":{"@type":"Organization","name":"71588.com"}}</script>{% endif %}
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="topbar" role="note">📩 <a href="https://web.works/contact" target="_blank" rel="noopener">Contact, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership</a></div>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="{{ site.baseurl }}/index.html" aria-label="71588.com home"><span class="brand-mark">發</span><span>71588<small>Prosperity Numbers</small></span></a>
+    <ul class="menu" id="menu"><li><button class="dd" aria-haspopup="true">Tools ▾</button><ul class="submenu"><li><a href="{{ site.baseurl }}/analyzer.html">🔢 Lucky Number Analyzer</a></li><li><a href="{{ site.baseurl }}/generator.html">✨ Number & Price Generator</a></li><li><a href="{{ site.baseurl }}/zodiac.html">🐉 Chinese Zodiac & Lunar Date</a></li><li><a href="{{ site.baseurl }}/dates.html">📅 Auspicious Date Finder</a></li></ul></li><li><a href="{{ site.baseurl }}/meanings.html">Meanings</a></li><li><button class="dd" aria-haspopup="true">Learn ▾</button><ul class="submenu"><li><a href="{{ site.baseurl }}/learn.html">📚 Guides hub</a></li><li><a href="{{ site.baseurl }}/the-71588-story.html">🧧 The 71588 story</a></li><li><a href="{{ site.baseurl }}/videos.html">▶️ Videos</a></li><li><a href="{{ site.baseurl }}/business.html">🏮 Prosperity for Business</a></li></ul></li><li><a href="{{ site.baseurl }}/marketplace.html">Marketplace</a></li><li><button class="dd" aria-haspopup="true">Community ▾</button><ul class="submenu"><li><a href="{{ site.baseurl }}/contests.html">🏆 Contests & Prizes</a></li><li><a href="{{ site.baseurl }}/support.html">❤️ Support us</a></li><li><a href="{{ site.baseurl }}/careers.html">💼 Careers & Contributors</a></li><li><a href="{{ site.baseurl }}/advertise.html">📣 Advertise & Sponsor</a></li></ul></li><li><a href="{{ site.baseurl }}/contact.html">Contact</a></li><li class="nav-cta"><a class="btn btn-primary btn-sm" style="color:#fff" href="{{ site.baseurl }}/blueprint.html">Free Blueprint</a></li><li><button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode">◐</button></li></ul>
+    <button class="icon-btn burger" aria-controls="menu" aria-expanded="false" aria-label="Open menu">☰</button>
+  </nav>
+</header>
+<main id="main">
+{{ content }}
+</main>
+<section class="container" style="padding:24px 16px 0">
+  <div class="cta-band reveal">
+    <div><h2>Get the Daily Lucky Number 🧧</h2><p>One number, its meaning and a prosperity tip — every morning. Plus first access to contests and marketplace drops. Free, unsubscribe anytime.</p></div>
+    <form data-form="Newsletter signup" data-success="You're in! Watch your inbox for your first lucky number.">
+      <input type="email" name="email" required placeholder="you@example.com" aria-label="Email address">
+      <input type="hidden" name="interest" value="Daily Lucky Number">
+      <button class="btn btn-gold" type="submit">Subscribe</button>
+      <p class="small" style="width:100%;margin:6px 0 0;color:#ffe3e6">We respect your privacy. See our <a style="color:#ffd76a" href="{{ site.baseurl }}/privacy.html">Privacy Policy</a>.</p>
+    </form>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" style="color:#fff" href="{{ site.baseurl }}/index.html"><span class="brand-mark">發</span><span>71588<small style="color:#c9b8a8">Prosperity Numbers</small></span></a>
+        <p style="margin-top:14px;font-size:.93rem">起·要我发发 — the world's friendliest guide to Chinese lucky numbers, prosperity culture and meaningful numbers for life and business.</p>
+        <p class="small"><a href="https://web.works/contact" target="_blank" rel="noopener">Interested in this website or domain? Contact →</a></p>
+      </div>
+      <div><h4>Tools</h4><ul>
+        <li><a href="{{ site.baseurl }}/analyzer.html">Number Analyzer</a></li><li><a href="{{ site.baseurl }}/generator.html">Number & Price Generator</a></li>
+        <li><a href="{{ site.baseurl }}/zodiac.html">Chinese Zodiac</a></li><li><a href="{{ site.baseurl }}/dates.html">Auspicious Dates</a></li><li><a href="{{ site.baseurl }}/meanings.html">Number Dictionary</a></li></ul></div>
+      <div><h4>Learn</h4><ul>
+        <li><a href="{{ site.baseurl }}/learn.html">Guides</a></li><li><a href="{{ site.baseurl }}/the-71588-story.html">The 71588 Story</a></li>
+        <li><a href="{{ site.baseurl }}/videos.html">Videos</a></li><li><a href="{{ site.baseurl }}/business.html">For Business</a></li><li><a href="{{ site.baseurl }}/marketplace.html">Marketplace</a></li></ul></div>
+      <div><h4>Community</h4><ul>
+        <li><a href="{{ site.baseurl }}/contests.html">Contests & Prizes</a></li><li><a href="{{ site.baseurl }}/support.html">Support / Donate</a></li>
+        <li><a href="{{ site.baseurl }}/careers.html">Careers</a></li><li><a href="{{ site.baseurl }}/advertise.html">Advertise & Sponsor</a></li><li><a href="{{ site.baseurl }}/blueprint.html">Free Blueprint</a></li></ul></div>
+      <div><h4>Company</h4><ul data-social>
+        <li><a href="{{ site.baseurl }}/about.html">About</a></li><li><a href="{{ site.baseurl }}/contact.html">Contact</a></li><li><a href="{{ site.baseurl }}/privacy.html">Privacy</a></li>
+        <li><a href="{{ site.baseurl }}/terms.html">Terms</a></li><li><a href="{{ site.baseurl }}/legal.html">Trademark & Copyright</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> 71588.com. All rights reserved. Content is for cultural education and entertainment; not financial, legal or religious advice.</span>
+      <span>"71588" is used descriptively as a number and domain name. No affiliation with any company using this number. <a href="{{ site.baseurl }}/legal.html">Disclosure</a></span>
+    </div>
+  </div>
+</footer>
+<div class="float-cta"><button class="icon-btn to-top" aria-label="Back to top">↑</button></div>
+<div class="cookie" role="dialog" aria-label="Cookie notice"><p style="margin:0 0 10px">We use cookies for analytics and to show ads (Google AdSense) that keep this site free. <a href="{{ site.baseurl }}/privacy.html">Learn more</a>.</p>
+  <button class="btn btn-primary btn-sm" data-cookie="1">Accept</button> <button class="btn btn-ghost btn-sm" data-cookie="0">Essential only</button></div>
+<div class="modal" id="lead-modal" aria-modal="true" role="dialog" aria-labelledby="lm-title">
+  <div class="form-card">
+    <button class="icon-btn close" data-close aria-label="Close">✕</button>
+    <span class="tag red">Free · 2 minutes</span>
+    <h2 id="lm-title" style="margin-top:10px">Before you go — get your free Prosperity Blueprint</h2>
+    <p class="muted">Your personalised lucky numbers, best dates and a prosperity checklist for your next launch, purchase or celebration.</p>
+    <form class="form" data-form="Exit-intent blueprint request" data-success="Blueprint request received! We'll email your personalised blueprint shortly.">
+      <input name="name" required placeholder="First name" aria-label="First name">
+      <input type="email" name="email" required placeholder="Email" aria-label="Email">
+      <select name="goal" aria-label="Goal"><option>Personal lucky numbers</option><option>Business launch / pricing</option><option>Buy or sell a lucky number / domain</option><option>Wedding or event date</option></select>
+      <button class="btn btn-primary" type="submit">Send my free blueprint</button>
+      <p class="form-note">No spam. One-click unsubscribe.</p>
+    </form>
+  </div>
+</div>
+<script>window.SITE_BASE="{{ site.baseurl }}/";</script>
+<script src="{{ site.baseurl }}/assets/js/config.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js" defer></script>
+<script src="{{ site.baseurl }}/assets/js/numbers.js" defer></script>
+
+</body>
+</html>
