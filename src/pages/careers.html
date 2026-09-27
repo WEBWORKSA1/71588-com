@@ -1,0 +1,46 @@
+<!--
+title: Careers & Contributors — Work with 71588.com
+description: Join 71588.com as a freelance writer, bilingual editor, developer, video creator, marketplace broker or growth marketer. Remote, flexible, paid roles.
+priority: 0.6
+-->
+<div class="page-hero"><div class="container">
+  <div class="crumbs"><a href="index.html">Home</a> › Careers</div>
+  <h1>Careers & Contributors</h1>
+  <p>Remote, flexible work for people who love language, culture, numbers and growth. We hire freelancers first and grow roles with the site.</p>
+</div></div>
+<section style="padding-top:32px">
+  <div class="container">
+    <div class="grid g4" style="margin-bottom:28px">
+      <div class="card"><div class="ico">🌏</div><h3>Remote-first</h3><p>Work from anywhere.</p></div>
+      <div class="card"><div class="ico">⏱</div><h3>Flexible</h3><p>Project or part-time.</p></div>
+      <div class="card"><div class="ico">💵</div><h3>Paid fairly</h3><p>Per piece or hourly, paid promptly.</p></div>
+      <div class="card"><div class="ico">📈</div><h3>Grow with us</h3><p>Ongoing work for top contributors.</p></div>
+    </div>
+    <h2>Open roles</h2>
+    <div class="grid g2" id="roles">
+      <div class="card"><span class="tag">Freelance · Remote</span><h3 style="margin-top:8px">Bilingual Culture Writer (EN / 中文)</h3><p>Research-driven guides on numbers, festivals and etiquette. Per-article pay.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Bilingual Culture Writer">Apply</a></div>
+      <div class="card"><span class="tag">Freelance · Remote</span><h3 style="margin-top:8px">Front-end Developer (JS)</h3><p>Build new interactive tools: calculators, calendars, data visualisations.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Front-end Developer">Apply</a></div>
+      <div class="card"><span class="tag">Freelance · Remote</span><h3 style="margin-top:8px">Short-form Video Creator</h3><p>60-second explainers for YouTube Shorts, TikTok, Reels and Xiaohongshu.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Short-form Video Creator">Apply</a></div>
+      <div class="card"><span class="tag">Commission · Remote</span><h3 style="margin-top:8px">Marketplace Broker</h3><p>Source and broker premium numbers and numeric domains. Commission-based.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Marketplace Broker">Apply</a></div>
+      <div class="card"><span class="tag">Part-time · Remote</span><h3 style="margin-top:8px">Growth & SEO Marketer</h3><p>Own organic growth, newsletter and partnerships.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Growth & SEO Marketer">Apply</a></div>
+      <div class="card" id="contributors"><span class="tag jade">Open call</span><h3 style="margin-top:8px">Guest Contributors & Experts</h3><p>Feng shui consultants, linguists, marketers — pitch a guide or join our expert panel.</p><a class="btn btn-ghost btn-sm" href="#apply" data-role="Guest Contributor / Expert">Pitch us</a></div>
+    </div>
+  </div>
+</section>
+<section class="section-alt" id="apply">
+  <div class="container" style="max-width:760px">
+    <div class="form-card">
+      <h2 style="font-size:1.5rem">Apply / pitch</h2>
+      <form class="form" data-form="Careers application" data-success="Application received — thank you! We reply to every applicant within 7 days.">
+        <div class="row"><div><label for="j-name">Full name</label><input id="j-name" name="name" required></div><div><label for="j-email">Email</label><input id="j-email" type="email" name="email" required></div></div>
+        <div class="row"><div><label for="j-role">Role</label><select id="j-role" name="role"><option>Bilingual Culture Writer</option><option>Front-end Developer</option><option>Short-form Video Creator</option><option>Marketplace Broker</option><option>Growth & SEO Marketer</option><option>Guest Contributor / Expert</option><option>Other</option></select></div><div><label for="j-loc">Location / time zone</label><input id="j-loc" name="location"></div></div>
+        <div class="row"><div><label for="j-port">Portfolio / LinkedIn / GitHub</label><input id="j-port" name="portfolio" type="url" placeholder="https://" required></div><div><label for="j-lang">Languages</label><input id="j-lang" name="languages" placeholder="English, Mandarin, Cantonese…"></div></div>
+        <div><label for="j-rate">Expected rate</label><input id="j-rate" name="rate" placeholder="e.g. $40/hr or $150/article"></div>
+        <div><label for="j-msg">Why you? (or your article pitch)</label><textarea id="j-msg" name="message" required></textarea></div>
+        <label class="check"><input type="checkbox" name="consent" value="yes" required> I consent to 71588.com storing my application for recruitment purposes.</label>
+        <button class="btn btn-primary" type="submit">Submit application</button>
+      </form>
+    </div>
+  </div>
+</section>
+<script>document.querySelectorAll('[data-role]').forEach(function(a){a.addEventListener('click',function(){var s=document.getElementById('j-role');if(s)s.value=a.getAttribute('data-role');});});</script>
